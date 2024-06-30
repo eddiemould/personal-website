@@ -1,0 +1,35 @@
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', arial, sans-serif;
+}
+
+body {
+  padding: 2em;
+}
+
+#home {
+  position: absolute;
+  z-index: 10;
+}
+
+#home-content {
+  margin-top: 2.75em;
+}
+
+#double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 7%;
+}
+
+#footer {
+  margin-top: 5em;
+}
+
+.website-navigation-container {
+  margin-top: 5em;
+}
