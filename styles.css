@@ -5,19 +5,26 @@
   padding: 0;
   box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', arial, sans-serif;
+  background-color: rgb(255, 232, 81);
 }
 
 body {
   padding: 2em;
 }
 
+a {
+  color: black;
+}
+
 #home {
   position: absolute;
   z-index: 10;
+  text-decoration: none;
+  /* border-bottom: 1.25px solid black; */
 }
 
 #home-content {
-  margin-top: 2.75em;
+  margin-top: 1.75em;
 }
 
 #double {
@@ -27,9 +34,37 @@ body {
 }
 
 #footer {
-  margin-top: 5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 2em;
+}
+
+.home-header {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+.small-line-gap {
+  line-height: 1.25em;
+}
+
+.personal-links {
+  font-size: 0.8em;
+  text-decoration: none;
+}
+
+.link-arrows {
+  display: inline-block;
+  font-size: 0.8em;
+}
+
+.small-text {
+  font-size: 0.75em;
 }
 
 .website-navigation-container {
   margin-top: 5em;
-} 
+}
