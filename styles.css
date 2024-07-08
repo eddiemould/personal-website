@@ -11,6 +11,11 @@ a {
   color: black;
 }
 
+::selection {
+  color: white;
+  background: blue;
+}
+
 /* HOMEPAGE */
 
 #body-home-page {
@@ -310,6 +315,46 @@ a {
   border-top: 1px solid black;
 }
 
+/* PHOTOS */
+
+#body-photos-page {
+  padding: 2em;
+  background-color: black;
+}
+
+#body-photos-page p, #body-photos-page a {
+  color: white;
+}
+
+body#body-photos-page span#menu-click {
+  color: red;
+}
+
+.page-specific-header-white {
+  font-size: 2em;
+  font-weight: 350;
+  margin-top: 0.4em;
+  padding-top: 0.8em;
+  border-top: 1px solid white;
+}
+
+#nav-square-white {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid red;
+  width: 40px;
+  height: 27px;
+
+border-radius: 100px;
+}
+
+#nav-square-white:hover {
+  border: 1px solid yellow;
+}
+
 /* NAVIGATION */
 
 #header-navigation-wrapper {
@@ -358,4 +403,110 @@ border-radius: 100px;
   background-color: rgba(0, 0, 0, .15);
   color: blue;
   border: 1px solid blue;
+}
+
+/* EVERYTHING TABLE CONTENT */
+
+#regular-page-content {
+  display: flex;
+  flex-direction: column;
+}
+
+#table-list {
+  margin-top: 3em;
+  width: 100%;
+
+  background-color: rgb(249,249,249);
+}
+
+#page-item-wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.internal-page-item, .onlyext-page-item {
+  color: rgb(155,155,155);
+}
+
+.internal-page-item:hover {
+  background-color: beige;
+}
+
+.external-page-item:hover {
+  background-color: beige;
+  cursor: pointer;
+}
+
+.onlyext-page-item:hover {
+  background-color: beige;
+}
+
+.internal-page-item, .external-page-item, .onlyext-page-item {
+  height: 1.25em;
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.year, .title, .description, .type {
+  font-size: 0.8em;
+}
+
+.year {
+  flex: 0.5;
+}
+
+.title {
+  flex: 2;
+}
+
+.description {
+  flex: 2;
+}
+
+.type {
+  flex: 0.5;
+}
+
+span.page-hyperlink {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5em;
+
+  top: 50%;
+  transform: translate(0, -50%);
+
+  opacity: 0%;
+}
+
+a.page-hyperlink {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5em;
+
+  top: 50%;
+  transform: translate(0, -50%);
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.page-hyperlink-onlyext {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5em;
+
+  top: 50%;
+  transform: translate(0, -50%);
+
+  cursor: pointer;
+  text-decoration: none;
+  color: rgb(155,155,155);
 }

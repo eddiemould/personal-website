@@ -8,10 +8,6 @@
 </head>
 <body id="body-everything-page">
   <div id="header-navigation-wrapper">
-  <!-- <header>
-    <a id="home" href="/index.html">Eddie Mould</a>
-  </header> -->
-
   <header>
     <a id="home" href="/">Eddie Mould</a>
   </header>
@@ -21,9 +17,9 @@
     <br>
     <a href="/">Writing</a>
     <br>
-    <a href="/">Photos</a>
+    <a href="/photos.html">Photos</a>
     <br>
-    <a href="/">Everything</a>
+    <a href="/everything.html">Everything</a>
   </nav>
   
   <nav id="top-right" onclick="hideShow()">
@@ -33,11 +29,42 @@
     </span>
     </div>
   </nav>
-
   </div>
 
   <main>
-    <p class="page-specific-header">Everything</p>
+    <div id="regular-page-content">
+      <p class="page-specific-header">Everything</p>
+      <div id="table-list">
+        <div id="page-item-wrapper">
+          <div class="internal-page-item">
+            <div class="year">Year</div>
+            <div class="title">Title Here</div>
+            <div class="description">Brief Description</div>
+            <div class="type">Type</div>
+          </div>
+          <span class="page-hyperlink">&#8599;</span>
+        </div>
+        <div id="page-item-wrapper">
+          <a class="external-page-item" href="https://eddiemould.com">
+            <div class="year">2022</div>
+            <div class="title">Internal Example</div>
+            <div class="description">An example of both internal and external pages</div>
+            <div class="type">Editing</div>
+          </a>
+          <a class="page-hyperlink" href="https://youtube.com" target="_blank">&#8599;</a>
+        </div>
+        <div id="page-item-wrapper">
+          <a class="onlyext-page-item">
+            <div class="year">2022</div>
+            <div class="title">Film Poster Designer Index</div>
+            <div class="description">A personal index of film poster design</div>
+            <div class="type">Writing</div>
+          </a>
+          <a class="page-hyperlink-onlyext" href="https://medium.com/the-paradiso/film-poster-designer-index-b45417d5b9ac" target="_blank">&#8599;</a>
+        </div>
+      </div>
+
+    </div>
   </main>
 
   <script src="script.js"></script>
