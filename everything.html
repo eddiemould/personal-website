@@ -7,15 +7,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="body-everything-page">
-  <div id="header-navigation-wrapper">
+  <div id="header-navigation-wrapper" class="show-on-desktop">
   <header>
     <a id="home" href="/">Eddie Mould</a>
   </header>
   
   <nav id="main-nav" class="main-nav">
-    <a href="/">Post Production</a>
+    <a href="/post-production.html">Post Production</a>
     <br>
-    <a href="/">Writing</a>
+    <a href="/writing.html">Writing</a>
     <br>
     <a href="/photos.html">Photos</a>
     <br>
@@ -31,7 +31,7 @@
   </nav>
   </div>
 
-  <main>
+  <main class="show-on-desktop">
     <div id="regular-page-content">
       <p class="page-specific-header">Everything</p>
       <div id="table-list">
@@ -66,6 +66,15 @@
 
     </div>
   </main>
+
+  <div id="mobile-home-body" class="hide-on-desktop">
+    <div class="mobile-textbox">
+      Hello and thank you for visiting my website. To view the full site, please revisit on a screen with a larger width.
+      <br>
+      <br>
+      Feel free to email me here: <a href="mailto:eddiemould@gmail.com">eddiemould@gmail.com</a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>

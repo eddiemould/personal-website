@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="body-home-page">
-  <header>
+  <header class="show-on-desktop">
     <a id="home" href="/">Eddie Mould</a>
   </header>
 
-  <main id="main-home">
+  <main id="main-home" class="show-on-desktop">
     <div id="double">
       <div>
         <div id="about-container">
@@ -50,8 +50,8 @@
 
       <div>
         <div id="project-pages">
-          <a class="project-type" href="/">Post Production</a>
-          <a class="project-type" href="/">Writing</a>
+          <a class="project-type" href="/post-production.html">Post Production</a>
+          <a class="project-type" href="/writing.html">Writing</a>
           <a class="project-type" href="/photos.html">Photos</a>
           <a class="project-type" href="/everything.html">Everything</a>
         </div>
@@ -124,10 +124,19 @@
     </div>
   </main>
     
-  <footer id="footer-container">
+  <footer id="footer-container" class="show-on-desktop">
     <div id="footer">
-      <p class="small-text">this website was coded by hand. last updated july 7, 2024.</p>
+      <p class="small-text">this website was coded by hand. last updated july 9, 2024.</p>
     </div>
   </footer>
+
+  <div id="mobile-home-body" class="hide-on-desktop">
+    <div class="mobile-textbox">
+      Hello and thank you for visiting my website. To view the full site, please revisit on a screen with a larger width.
+      <br>
+      <br>
+      Feel free to email me here: <a href="mailto:eddiemould@gmail.com">eddiemould@gmail.com</a>
+    </div>
+  </div>
 </body>
 </html>

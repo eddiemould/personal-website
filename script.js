@@ -1,3 +1,5 @@
+// NAV BAR
+
 var nav = document.getElementById('main-nav');
 var display = 0;
 function hideShow()

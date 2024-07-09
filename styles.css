@@ -83,6 +83,14 @@ a {
   column-gap: 1em;
 }
 
+@media screen and (max-width: 1030px) {
+  #website-pages-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+  }
+}
+
 .website-page {
   background-color: greenyellow;
   text-decoration: none;
@@ -322,8 +330,13 @@ a {
   background-color: black;
 }
 
-#body-photos-page p, #body-photos-page a {
+#body-photos-page p, #body-photos-page a, #body-photos-page ul, #body-photos-page li, #body-photos-page details,
+#body-post-page p, #body-post-page a {
   color: white;
+}
+
+#main-photos-tree a:hover {
+  color: yellow;
 }
 
 body#body-photos-page span#menu-click {
@@ -353,6 +366,77 @@ border-radius: 100px;
 
 #nav-square-white:hover {
   border: 1px solid yellow;
+}
+
+#main-photos-tree {
+  margin-top: 3em;
+  line-height: 1.5;
+  margin-left: 1.5em;
+  display: inline-block;
+}
+
+#main-photos-tree ul, #main-photos-tree li  {
+  list-style: none;
+}
+
+#main-photos-tree summary {
+  cursor: pointer;
+  /* list-style-type: "→  "; */
+  list-style-position: outside;
+  text-decoration: underline;
+}
+
+#main-photos-tree summary:hover {
+  color: red;
+}
+
+.photos-parent-list {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+.photos-first-child {
+  margin-left: 1em;
+  text-decoration: none;
+}
+
+.photos-first-child:hover {
+  color: yellow;
+}
+
+.photos-second-list {
+  font-weight: 700;
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.photos-second-child {
+  margin-left: 3em;
+  text-decoration: none;
+  display: block
+}
+
+ul details[open] > .photos-parent-list, 
+ul details[open] > .photos-second-list {
+  color: red;
+}
+
+#photo-tree-2024 {
+  position: relative;
+}
+
+#photo-2024 {
+  display: none;
+  position: absolute;
+  top: -50px;
+  left: 20vw;
+
+  width: 40vw;
+  object-fit: contain;
+
+  border: 2.5px solid white;
 }
 
 /* NAVIGATION */
@@ -509,4 +593,65 @@ a.page-hyperlink-onlyext {
   cursor: pointer;
   text-decoration: none;
   color: rgb(155,155,155);
+}
+
+/* WRITING */
+
+#body-writing-page {
+  padding: 2em;
+}
+
+/* POST PRODUCTION */
+
+#body-post-page {
+  padding: 2em;
+  background-color: black;
+}
+
+body#body-post-page span#menu-click {
+  color: red;
+}
+
+/* HIDING EVERYTHING FOR MOBILE (haha) */
+
+@media screen and (max-width: 775px) {
+  .show-on-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 776px) {
+  .hide-on-desktop {
+    display: none;
+  }
+}
+
+.mobile-textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+
+  font-size: 1.1em;
+
+  display: inline-block;
+  line-height: 1.2em;
+}
+
+.mobile-textbox a {
+  color: rgb(218, 193, 82);
+}
+
+.mobile-textbox-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: end;
+
+  font-size: 1.1em;
+
+  display: inline-block;
+  line-height: 1.2em;
+
+  color: white;
 }

@@ -7,15 +7,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body id="body-photos-page">
-  <div id="header-navigation-wrapper">
+  <div id="header-navigation-wrapper" class="show-on-desktop">
     <header>
       <a id="home" href="/">Eddie Mould</a>
     </header>
     
     <nav id="main-nav" class="main-nav">
-      <a href="/">Post Production</a>
+      <a href="/post-production.html">Post Production</a>
       <br>
-      <a href="/">Writing</a>
+      <a href="/writing.html">Writing</a>
       <br>
       <a href="/photos.html">Photos</a>
       <br>
@@ -31,10 +31,139 @@
     </nav>
     </div>
 
-    <main>
+    <main class="show-on-desktop">
       <p class="page-specific-header-white">Photos</p>
 
+      <ul id="main-photos-tree">
+        <li id="photo-tree-2024">
+          <details>
+            <summary 
+            onmouseover="document.getElementById('photo-2024').style.display='block'"
+            onmouseout="document.getElementById('photo-2024').style.display='none'"
+            class="photos-parent-list">2024</summary>
+            <ul>
+              <a class="photos-first-child" href="/">--- Bournemouth</a>
+              <li>
+                <details>
+                  <summary class="photos-second-list">Second Item</summary>
+                  <ul>
+                    <a class="photos-second-child" href="/">--- First Item</a>
+                    <a class="photos-second-child" href="/">--- Second Item</a>
+                    <a class="photos-second-child" href="/">--- Third Item</a>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+          <img id="photo-2024" src="/home-images/photo-example.webp" alt="example photo from 2024">
+        </li>
+
+        <li>
+          <details>
+            <summary class="photos-parent-list">2023</summary>
+            <ul>
+              <a class="photos-first-child" href="/">--- Bournemouth</a>
+              <li>
+                <details>
+                  <summary class="photos-second-list">Second Item</summary>
+                  <ul>
+                    <a class="photos-second-child" href="/">--- First Item</a>
+                    <a class="photos-second-child" href="/">--- Second Item</a>
+                    <a class="photos-second-child" href="/">--- Third Item</a>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary class="photos-parent-list">2022</summary>
+            <ul>
+              <a class="photos-first-child" href="/">--- Bournemouth</a>
+              <li>
+                <details>
+                  <summary class="photos-second-list">Second Item</summary>
+                  <ul>
+                    <a class="photos-second-child" href="/">--- First Item</a>
+                    <a class="photos-second-child" href="/">--- Second Item</a>
+                    <a class="photos-second-child" href="/">--- Third Item</a>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary class="photos-parent-list">2021</summary>
+            <ul>
+              <a class="photos-first-child" href="/">--- Bournemouth</a>
+              <li>
+                <details>
+                  <summary class="photos-second-list">Second Item</summary>
+                  <ul>
+                    <a class="photos-second-child" href="/">--- First Item</a>
+                    <a class="photos-second-child" href="/">--- Second Item</a>
+                    <a class="photos-second-child" href="/">--- Third Item</a>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary class="photos-parent-list">2019</summary>
+            <ul>
+              <a class="photos-first-child" href="/">--- Bournemouth</a>
+              <li>
+                <details>
+                  <summary class="photos-second-list">Second Item</summary>
+                  <ul>
+                    <a class="photos-second-child" href="/">--- First Item</a>
+                    <a class="photos-second-child" href="/">--- Second Item</a>
+                    <a class="photos-second-child" href="/">--- Third Item</a>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+
+        <li>
+          <details>
+            <summary class="photos-parent-list">2018</summary>
+            <ul>
+              <a class="photos-first-child" href="/">--- Bournemouth</a>
+              <li>
+                <details>
+                  <summary class="photos-second-list">Second Item</summary>
+                  <ul>
+                    <a class="photos-second-child" href="/">--- First Item</a>
+                    <a class="photos-second-child" href="/">--- Second Item</a>
+                    <a class="photos-second-child" href="/">--- Third Item</a>
+                  </ul>
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+
     </main>
+
+    <div id="mobile-home-body" class="hide-on-desktop">
+      <div class="mobile-textbox-white">
+        Hello and thank you for visiting my website. To view the full site, please revisit on a screen with a larger width.
+        <br>
+        <br>
+        Feel free to email me here: <a href="mailto:eddiemould@gmail.com">eddiemould@gmail.com</a>
+      </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
