@@ -21,3 +21,23 @@ menuClick.innerHTML = "☰";
 } else {
 menuClick.innerHTML = "✕";
 }}
+
+// POST PRODUCTION
+
+const filterButtons = document.querySelectorAll(".post-production-filter-buttons button")
+const filterableCards = document.querySelectorAll(".post-production-filterable-cards .postproductioncard")
+
+const filterCards  = e => {
+  document.querySelector(".post-production-filter-active").classList.remove("post-production-filter-active");
+  e.target.classList.add("post-production-filter-active")
+  console.log(e.target);
+
+  filterableCards.forEach(postproductioncard => {
+    postproductioncard.classList.add("postproductionfilterhide");
+    if(postproductioncard.dataset.name === e.target.dataset.name || e.target.dataset.name === "all"){
+      postproductioncard.classList.remove("postproductionfilterhide");
+    }
+  });
+};
+
+filterButtons.forEach(button => button.addEventListener("click", filterCards));

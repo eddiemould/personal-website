@@ -439,6 +439,36 @@ ul details[open] > .photos-second-list {
   border: 2.5px solid white;
 }
 
+.photos-gallery {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photos-gallery img {
+  max-height: calc(100vh - 100px);
+  max-width: calc(100vw - 100px);
+  margin: 10px 0px 10px;
+}
+
+.photos-gallery-double {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.photos-gallery-double img {
+  width: calc(100vw / 2 - 100px);
+  margin: 10px;
+  object-fit: contain;
+}
+
+.photos-gallery p {
+  font-size: 0.9em;
+  margin: 10px 0px 10px;
+}
+
 /* NAVIGATION */
 
 #header-navigation-wrapper {
@@ -546,11 +576,17 @@ border-radius: 100px;
 }
 
 .description {
-  flex: 2;
+  flex: 1.5;
 }
 
 .type {
-  flex: 0.5;
+  flex: 1;
+}
+
+@media screen and (max-width: 1250px) {
+  .description, .type {
+    display: none;
+  }
 }
 
 span.page-hyperlink {
@@ -654,4 +690,96 @@ body#body-post-page span#menu-click {
   line-height: 1.2em;
 
   color: white;
+}
+
+/* POST-PRODUCTION */
+
+.post-production-gallery {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post-production-image {
+  margin: 0 10px 0;
+}
+
+.post-production-image img, .post-production-image iframe {
+  width: 650px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.post-production-titles {
+  text-align: start;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
+.post-production-titles a {
+  font-style: italic;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.post-production-double {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+
+  margin: 20px 0 20px;
+}
+
+.post-production-buttons-container {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.post-production-buttons-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: red;
+  cursor: pointer;
+  color: white;
+}
+
+.post-production-filter-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+button.post-production-filter-active {
+  background: yellow;
+  color: black;
+}
+
+.postproductioncard.postproductionfilterhide {
+  display: none;
+}
+
+/* WRITING */
+
+#body-writing-page .writing-title {
+  font-weight: 700;
+  font-size: 0.85em;
+}
+
+#body-writing-page .writing-element {
+  font-size: 0.85em;
+}
+
+#body-writing-page main a:hover {
+  background-color: yellow;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#body-writing-page main a {
+  text-decoration: underline;
 }
