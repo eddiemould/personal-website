@@ -83,7 +83,7 @@ a {
   column-gap: 1em;
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 1175px) {
   #website-pages-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -741,11 +741,15 @@ body#body-post-page span#menu-click {
 
 .post-production-buttons-container button {
   padding: 10px 20px;
-  border: none;
+  border: 1px solid red;
   border-radius: 5px;
-  background: red;
+  background: none;
   cursor: pointer;
   color: white;
+}
+
+.post-production-buttons-container button:hover {
+  border: 1px solid yellow;
 }
 
 .post-production-filter-buttons {
@@ -757,6 +761,7 @@ body#body-post-page span#menu-click {
 button.post-production-filter-active {
   background: yellow;
   color: black;
+  border: 1px solid yellow;
 }
 
 .postproductioncard.postproductionfilterhide {
@@ -782,4 +787,162 @@ button.post-production-filter-active {
 
 #body-writing-page main a {
   text-decoration: underline;
+}
+
+/* LINKS OUT */
+
+#body-links-page {
+  padding: 2em;
+  background-color: rgb(240, 255, 255);
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px dashed blue;
+  border-radius: 7px;
+
+  margin-top: 0.7em;
+
+  flex-direction: column;
+
+  padding-bottom: 0.7em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+
+  height: 100%;
+
+  /* background-color: rgb(240, 255, 255);
+  filter: drop-shadow(7px 7px 0.5px lightblue); */
+}
+
+.links-multi-container {
+  display: flex;
+  gap: 0.7em;
+}
+
+.links-box-title {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 750;
+  font-style: italic;
+  background-color: lightgreen;
+  font-size: 0.9em;
+
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+}
+
+.links-grid {
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 0.7em;
+  column-gap: 2.1em;
+
+  margin-top: 0.7em;
+}
+
+.links-element {
+  width: 110px;
+  height: 35px;
+
+  position: relative;
+  cursor: pointer;
+}
+
+.links-element img {
+  object-fit: cover;
+  width: 110px;
+  height: 35px;
+}
+
+.links-element p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-wrap: nowrap;
+
+  color: black;
+  background-color: rgba(255, 255, 255, .8);
+  font-size: 0.75em;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+}
+
+.links-element:hover p {
+  background-color: rgba(255, 252, 52, .8);
+}
+
+.links-page-links {
+  font-size: 0.9em;
+  text-align: start;
+  width: 100%;
+
+  line-height: 1.5em;
+}
+
+.links-page-links a {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  color: darkblue;
+  text-decoration-color: darkcyan;
+}
+
+.links-page-links span {
+  font-size: 0.8em;
+}
+
+.links-page-links a:hover {
+  background-color: black;
+  text-decoration: none;
+  color: lightblue;
+  border-radius: 2px;
+}
+
+.links-page-gifs-title {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  justify-content: space-between;
+}
+
+.links-page-gifs-title img {
+  width: 30px;
+  height: 30px;
+}
+
+.links-page-links-title {
+  background-color: lightblue;
+  display: inline-block;
+  border-radius: 3px;
+  padding-left: 4px;
+  padding-right: 4px;
+  margin-bottom: 0.5em;
+}
+
+.links-vertical-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.links-inter-title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 1000;
+  font-size: 1.5em;
+  margin-top: 0.45em;
+
+  border: 1px dashed blue;
+  border-radius: 7px;
 }
