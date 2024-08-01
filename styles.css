@@ -288,6 +288,7 @@ a {
 #link-404 {
   text-decoration: underline;
   margin-bottom: 1.75em;
+  font-style: italic;
 }
 
 #gif-404 {
@@ -634,7 +635,7 @@ body#body-post-page span#menu-click {
   color: red;
 }
 
-/* HIDING EVERYTHING FOR MOBILE (haha) */
+/* HIDING EVERYTHING FOR MOBILE (hehe) */
 
 @media screen and (max-width: 775px) {
   .show-on-desktop {
@@ -648,12 +649,18 @@ body#body-post-page span#menu-click {
   }
 }
 
-.mobile-textbox {
+#mobile-home-body {
+  height: calc(100vh - 4em);
+
   display: flex;
   flex-direction: column;
   justify-content: end;
-  text-align: end;
+  align-items: end;
 
+  text-align: end;
+}
+
+.mobile-textbox {
   font-size: 1.1em;
 
   display: inline-block;

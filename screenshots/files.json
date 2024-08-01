@@ -1,22 +1,25 @@
 [
-  {"type":"directory","name":"./","time":"2024-07-22","contents":[
-    {"type":"file","name":"files.json","time":"2024-07-22"},
-    {"type":"file","name":"screenshots.css","time":"2024-07-22"},
-    {"type":"file","name":"index.html","time":"2024-07-22"},
-    {"type":"directory","name":"misc-work","time":"2024-07-22","contents":[
+  {"type":"directory","name":"./","time":"2024-08-01","contents":[
+    {"type":"file","name":"files.json","time":"2024-08-01"},
+    {"type":"directory","name":"film-stills","time":"2024-08-01","contents":[
+      {"type":"file","name":"Screenshot 2024-07-27 at 22.18.42.png","time":"2024-07-27"},
+      {"type":"file","name":"Screenshot 2024-07-26 at 23.28.01.png","time":"2024-07-26"},
+      {"type":"file","name":"Screenshot 2024-04-16 at 10.42.35.png","time":"2024-04-16"},
+      {"type":"file","name":"Screenshot 2024-03-06 at 23.53.31.png","time":"2024-03-06"},
+      {"type":"file","name":"Screenshot 2024-02-29 at 23.27.54.png","time":"2024-02-29"}
+    ]},
+    {"type":"directory","name":"misc-work","time":"2024-08-01","contents":[
+      {"type":"file","name":"Screenshot 2024-07-25 at 11.34.43.png","time":"2024-07-25"},
       {"type":"file","name":"Screenshot 2024-04-16 at 11.54.45.png","time":"2024-04-16"},
       {"type":"file","name":"Screenshot 2024-03-27 at 11.39.23.png","time":"2024-03-27"},
       {"type":"file","name":"Screenshot 2024-03-26 at 13.51.15.png","time":"2024-03-26"},
       {"type":"file","name":"Screenshot 2024-03-20 at 20.58.14.png","time":"2024-03-20"},
       {"type":"file","name":"Screenshot 2024-03-11 at 16.53.15.png","time":"2024-03-11"}
     ]},
+    {"type":"file","name":"index.html","time":"2024-07-30"},
+    {"type":"file","name":"screenshots.css","time":"2024-07-22"},
     {"type":"directory","name":"games","time":"2024-07-22","contents":[
       {"type":"file","name":"Screenshot 2024-04-28 at 01.32.34.png","time":"2024-04-28"}
-    ]},
-    {"type":"directory","name":"film-stills","time":"2024-07-22","contents":[
-      {"type":"file","name":"Screenshot 2024-04-16 at 10.42.35.png","time":"2024-04-16"},
-      {"type":"file","name":"Screenshot 2024-03-06 at 23.53.31.png","time":"2024-03-06"},
-      {"type":"file","name":"Screenshot 2024-02-29 at 23.27.54.png","time":"2024-02-29"}
     ]},
     {"type":"directory","name":"typography","time":"2024-07-22","contents":[
       {"type":"file","name":"Screenshot 2024-05-24 at 22.40.47.png","time":"2024-05-24"},
@@ -27,5 +30,5 @@
     ]}
   ]}
 ,
-  {"type":"report","directories":5,"files":17}
+  {"type":"report","directories":5,"files":20}
 ]
