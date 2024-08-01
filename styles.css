@@ -654,8 +654,8 @@ body#body-post-page span#menu-click {
 
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: end;
+  justify-content: center;
+  align-items: center;
 
   text-align: end;
 }
@@ -672,10 +672,10 @@ body#body-post-page span#menu-click {
 }
 
 .mobile-textbox-white {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: end;
-  text-align: end;
+  text-align: end; */
 
   font-size: 1.1em;
 
