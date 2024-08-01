@@ -946,7 +946,7 @@ button.post-production-filter-active {
 
 .body-listening-booth {
   /* background-image: url(/gifs/starry-sky.gif); */
-  background-image: url(/gifs/tree-bird.gif);
+  background-image: url(./gifs/tree-bird.gif);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
