@@ -944,12 +944,53 @@ button.post-production-filter-active {
 
 /* LISTENING BOOTH */
 
+.body-listening-booth-010824 {
+    /* background-image: url(/gifs/starry-sky.gif); */
+    background-image: url(./gifs/tree-bird.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+  
+    padding: 2em;
+}
+
+.listening-audio-players-010824 p {
+  text-align: center;
+
+  font-size: 0.7em;
+  margin-top: 1em;
+  padding: 1em;
+
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: inline-block;
+}
+
+.listening-audio-players-010824 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 6em);
+}
+
+.listening-audio-tag-010824 {
+  border: 15px solid pink;
+
+  width: 100%;
+}
+
 .body-listening-booth {
   /* background-image: url(/gifs/starry-sky.gif); */
-  background-image: url(./gifs/tree-bird.gif);
+  background-image: url(./listening-booth-images/Cagliostro-Car.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: 50% 50%;
   height: 100%;
   width: 100%;
 
@@ -961,24 +1002,46 @@ button.post-production-filter-active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: calc(100vh - 6em);
+
+  margin-top: calc(100vh - 40em);
 }
 
 .listening-audio-tag {
-  border: 15px solid pink;
+  border: 15px solid gold;
+  border-radius: 5px;
 
   width: 100%;
 }
 
-.listening-audio-players p {
+.listening-tracklist-container {
+  text-align: center;
+}
+
+.listening-tracklist-container p {
   text-align: center;
 
   font-size: 0.7em;
-  margin-top: 1em;
-  padding: 1em;
+  margin: 0.1em;
+  padding: 0.7em;
 
   color: white;
   background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+
+  display: inline-block;
+}
+
+.listening-audio-players span {
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 2em;
+  color: orangered;
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, .85);
+  border-radius: 5px;
+  padding: 0.2em;
 }
 
 /* INTERNAL POSTS */
