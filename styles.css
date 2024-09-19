@@ -41,6 +41,24 @@ a {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-size: 1.2em;
+
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  color: darkblue;
+  text-decoration-color: darkcyan;
+}
+
+.home-header:hover {
+  background-color: black;
+  text-decoration: none;
+  color: lightblue;
+  border-radius: 2px;
+
+  cursor: pointer;
+}
+
+.home-header-arrows {
+  display: inline-block;
 }
 
 #under-home {
@@ -58,8 +76,22 @@ a {
   border-top: 1px solid black;
 }
 
+#home-graduate-link {
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  color: darkblue;
+  text-decoration-color: darkcyan;
+}
+
+#home-graduate-link:hover {
+  background-color: black;
+  text-decoration: none;
+  color: lightblue;
+  border-radius: 2px;
+}
+
 #website-navigation-container {
-  margin-top: 22em;
+  margin-top: 25em;
 }
 
 #navigation-header {
@@ -984,7 +1016,7 @@ button.post-production-filter-active {
   width: 100%;
 }
 
-.body-listening-booth {
+.body-listening-booth-190924 {
   /* background-image: url(/gifs/starry-sky.gif); */
   background-image: url(./listening-booth-images/Cagliostro-Car.jpg);
   background-size: cover;
@@ -997,7 +1029,7 @@ button.post-production-filter-active {
   padding: 2em;
 }
 
-.listening-audio-players {
+.listening-audio-players-190924 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1006,18 +1038,18 @@ button.post-production-filter-active {
   margin-top: calc(100vh - 40em);
 }
 
-.listening-audio-tag {
+.listening-audio-tag-190924 {
   border: 15px solid gold;
   border-radius: 5px;
 
   width: 100%;
 }
 
-.listening-tracklist-container {
+.listening-tracklist-container-190924 {
   text-align: center;
 }
 
-.listening-tracklist-container p {
+.listening-tracklist-container-190924 p {
   text-align: center;
 
   font-size: 0.7em;
@@ -1031,7 +1063,7 @@ button.post-production-filter-active {
   display: inline-block;
 }
 
-.listening-audio-players span {
+.listening-audio-players-190924 span {
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
   font-weight: 800;
@@ -1042,6 +1074,46 @@ button.post-production-filter-active {
   background-color: rgba(255, 255, 255, .85);
   border-radius: 5px;
   padding: 0.2em;
+}
+
+.body-listening-booth-200924 {
+  /* background-image: url(/gifs/starry-sky.gif); */
+  background-image: url(./listening-booth-images/snoopy.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  height: 100%;
+  width: 100%;
+
+  padding: 2em;
+}
+
+.listening-audio-players-200924 p {
+text-align: center;
+
+font-size: 0.7em;
+margin-top: 1em;
+padding: 1em;
+
+color: white;
+background-color: rgba(0, 0, 0, 0.7);
+
+display: inline-block;
+}
+
+.listening-audio-players-200924 {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+height: calc(100vh - 6em);
+}
+
+.listening-audio-tag-200924 {
+border: 15px solid hotpink;
+
+width: 100%;
 }
 
 /* INTERNAL POSTS */
@@ -1099,4 +1171,56 @@ button.post-production-filter-active {
   text-align: start;
 
   margin-bottom: 4em;
+}
+
+/* RIGHT NOW */
+
+#body-right-now-page {
+  padding: 2em;
+}
+
+#right-now-double-container {
+  display: flex;
+}
+
+#right-now-left {
+  flex: 3;
+
+  font-size: 0.9em;
+}
+
+#right-now-right {
+  flex: 1;
+}
+
+#right-now-right div {
+  float: right;
+}
+
+#profile-photo {
+  aspect-ratio: 1/1;
+  width: 350px;
+  object-fit: cover;
+  object-position: 15% 15%;
+
+  border-radius: 10px;
+
+  display: block;
+}
+
+.right-now-header {
+  font-weight: 450;
+  text-decoration: underline;
+
+  margin-bottom: 3.5em;
+}
+
+.right-now-content {
+  margin-bottom: 3.5em;
+
+  text-wrap: wrap;
+}
+
+.right-now-content p {
+  display: inline-block;
 }
