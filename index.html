@@ -4,78 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eddie Mould</title>
-  <link rel="icon" type="image/x-icon" href="favicon-icon.png">
+
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || theme === 'light') {
+          document.documentElement.classList.add(theme);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
 </head>
-<body id="body-home-page">
-  <header class="show-on-desktop">
-    <a id="home" href="./">Eddie Mould</a>
-  </header>
 
-  <main id="main-home" class="show-on-desktop">
-    <div id="double">
-      <div>
-        <div id="about-container">
-            <p id="under-home" class="small-line-gap">Aspiring film editor interested in the ways we tell stories.</p>
-            <br>
-            <p id="email">email: hello@eddiemould.com</p>
-            <br>
-            <a class="personal-links" href="https://www.are.na/eddie-mould" target="_blank">are.na</a>
-            <p class="link-arrows">&#8599;</p>
-            <br>
-            <a class="personal-links" href="https://www.instagram.com/eddiemould" target="_blank">instagram</a>
-            <p class="link-arrows">&#8599;</p>
-            <br>
-            <a class="personal-links" href="https://www.linkedin.com/in/eddiemould/" target="_blank">linkedin</a>
-            <p class="link-arrows">&#8599;</p>
-            <br>
-            <a class="personal-links" href="https://letterboxd.com/eddiemould" target="_blank">letterboxd</a>
-            <p class="link-arrows">&#8599;</p>
-            <br>
-            <br>
-            <br>
-            <p class="home-header-arrows">&#8594;</p>
-            <a class="home-header" href="/right-now.html">Right now</a>
-            <p class="home-header-arrows">&#8592;</p>
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main class="main-column">
+    <div id="editing-container">
+      <h3 style="margin-bottom: 1rem;">Short Films</h3>
+      <div class="editing-film-wrapper">
+        <div>
+          <img src="/images/editing/this-is-the-life.jpg" alt="A still from This is The Life.">
         </div>
-
-        <div id="website-navigation-container">
-            <p id="navigation-header">Website Navigation</p>
-            <div id="website-pages-container">
-            <a class="website-page" href="./links-out.html">Links Out</a>
-            <a class="website-page" href="./screenshots/index.html">Screenshots</a>
-            <a class="website-page" href="./listening-booth.html">Listening Booth</a>
-            </div>
+        <div class="editing-film-text">
+          <h4>This is The Life? (2024)</h4>
+          <p style="margin-bottom: 1rem;">Dir. Maya Gan & Andrea Tagliarini</p>
+          <p>A surreal job interview takes place at a doorknob company, as different animation styles converge around them.</p>
         </div>
       </div>
-
-      <div>
-        <div id="project-pages">
-          <a class="project-type" href="./post-production.html">Post Production</a>
-          <a class="project-type" href="./writing.html">Writing</a>
-          <a class="project-type" href="./photos.html">Photos</a>
-          <a class="project-type" href="./everything.html">Everything</a>
+      <div class="editing-film-wrapper">
+        <div>
+          <img src="/images/editing/deaf-profoundly.jpg" alt="A still from Deaf Profoundly.">
         </div>
-        <!-- Project-links would drop here -->
+        <div class="editing-film-text">
+          <h4>Deaf, Profoundly (2024)</h4>
+          <p style="margin-bottom: 1rem;">Dir. Calvin Lupton</p>
+          <p>An intimate exploration of a fractured and strained relationship between a young adult and his profoundly deaf mother. Following a crucial few days in Oscar’s life the audience are invited to hold his hand as he begins to learn how to talk about his feelings, by unearthing the deaf experience.</p>
+        </div>
       </div>
     </div>
+
+    <!-- <div id="web-design-container">
+      <h3 style="margin-bottom: 1rem;">Web Design</h3>
+      <div id="design-img">
+        <img src="/images/web-design/ana-ortuno.jpg" alt="Screenshot of Ana Ortuño's website">
+        <p>Website for illustrator <a href="https://anaortunoflor.com/" target="_blank">Ana Ortuño Floria</a></p>
+      </div>
+    </div> -->
+
+    <div id="profile-container">
+      <div id="profile-photo" class="profile-item">
+        <img src="/images/profile/eddie-mould.jpg" alt="A photo of Eddie Mould with a felt fish hat on.">
+      </div>
+      <div id="profile-writing" class="profile-item">
+        <p>Welcome to my website - it contains some of the things I do.<br><br>Read about <a href="work.html">my work</a>, <a href="about.html">myself</a>, or <a href="https://youtu.be/vxD4Wbd_Fuo?si=psA1n1x0BwrrmY3n" target="_blank">do neither</a>.</p><br>
+        <p class="page-text">You can reach me via email: <a id="main-email" href="mailto:hello@eddiemould.com" style="font-style: italic;">hello@eddiemould.com</a></p>
+      </div>
+    </div>
+    <iframe id="spotify-embed" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5xuiav3Aaw2iU1nQlpo3bQ?utm_source=generator&theme=0" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
   </main>
-    
-  <footer id="footer-container" class="show-on-desktop">
-    <div id="footer">
-      <p class="small-text">this website was coded by hand and is in a state of perpetual beta. last updated march 19, 2025.</p>
-    </div>
-  </footer>
-
-  <div class="hide-on-desktop">
-    <div id="mobile-home-body">
-      <div class="mobile-textbox">
-        Hello and thank you for visiting my website. Maybe one day this site will be fully responsive and mobile-friendly, but not right now. To view the full site, please revisit on a screen with a larger width.
-        <br>
-        <br>
-        Feel free to email me here: <a href="mailto:hello@eddiemould.com">hello@eddiemould.com</a>
-      </div>
-    </div>
-  </div>
+  
+  <div id="footer-placeholder"></div>
 </body>
+  <script src="script.js"></script>
 </html>

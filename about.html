@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Eddie</title>
+
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || theme === 'light') {
+          document.documentElement.classList.add(theme);
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main class="main-column">
+      <h1 id="page-header">About</h1>
+      <div class="image-container-hor">
+        <img class="page-image-hor" src="/images/about/nice-2024.jpg" alt="A man laying asleep in the sun with a open book on his lap.">
+        <p>Nice, France, 2024</p>
+      </div>
+      <p class="page-text" id="about-sub-header">I have lots of interests that weave a convoluted web. Below are some that have found their way into my day to day life (listed in alphabetical order):</p><br>
+      <p class="page-text" style="font-weight: 700;">I’m a designer of websites, editor of films, gamer of the tabletop and video varieties, learner of languages, listener of music, photographer of people and places, player of music, reader of books, runner of marathons, watcher of films, and writer of stories.</p><br><br><br>
+      <h3>People</h3><br>
+      <p class="page-text" style="font-style: italic;">Those I keep coming back to:</p>
+      <p class="page-text"><a href="https://en.wikipedia.org/wiki/Agn%C3%A8s_Varda" target="_blank">Agnès Varda</a>, 
+        <a href="https://www.annieatkins.com/" target="_blank">Annie Atkins</a>, 
+        <a href="https://en.wikipedia.org/wiki/Akira_Kurosawa" target="_blank">Akira Kurosawa</a>, 
+        <a href="https://en.wikipedia.org/wiki/Calvin_and_Hobbes" target="_blank">Calvin and Hobbes</a>, 
+        <a href="https://en.wikipedia.org/wiki/Charlie_Brown" target="_blank">Charlie Brown</a>, 
+        <a href="https://en.wikipedia.org/wiki/David_Byrne" target="_blank">David Byrne</a>, 
+        <a href="https://en.wikipedia.org/wiki/Hayao_Miyazaki" target="_blank">Hayao Miyazaki</a>, 
+        <a href="https://en.wikipedia.org/wiki/Jim_Henson" target="_blank">Jim Henson</a>, 
+        <a href="https://kellianderson.com" target="_blank">Kelli Anderson</a>, 
+        <a href="https://en.wikipedia.org/wiki/Nobuhiko_Obayashi" target="_blank">Nobuhiko Obayashi</a>, 
+        <a href="https://www.oldsidelinghill.com" target="_blank">Patrick McHale</a>, 
+        <a href="https://quentinblake.com/" target="_blank">Quentin Blake</a>, 
+        <a href="https://www.ursulakleguin.com/" target="_blank">Ursula K. Le Guin</a></p><br>
+      <h3>Books</h3><br>
+      <p class="page-text" style="font-style: italic;">Those (notable) that I’ve read recently:</p>
+      <p class="page-text"><a href="https://dauntbookspublishing.co.uk/book/oranges/" target="_blank">Oranges - John McPhee</a>, 
+        <a href="https://en.wikipedia.org/wiki/Piranesi_(novel)" target="_blank">Piranesi - Susanna Clarke</a></p><br>
+      <h3>Films (& Shows)</h3><br>
+      <p class="page-text" style="font-style: italic;">Those (notable) that I’ve watched recently:</p>
+      <p class="page-text"><a href="https://www.imdb.com/title/tt0084807" target="_blank">Boat People - Ann Hui</a>, 
+        <a href="https://www.imdb.com/title/tt0468526/" target="_blank">Old Joy - Kelly Reichardt</a>, 
+        <a href="https://www.imdb.com/title/tt0041699" target="_blank">Stray Dog - Akira Kurosawa</a></p><br><br>
+      <p class="page-text">(June 2025, London)</p>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+</body>
+  <script src="script.js"></script>
+</html>
