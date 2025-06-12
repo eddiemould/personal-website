@@ -277,10 +277,19 @@ body {
   padding: 1rem 0 1rem 0;
 }
 
-#editing-container {
+#short-editing-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#feature-editing-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-bottom: var(--homepage-border-items); 
+  margin-bottom: 1rem;
 }
 
 .editing-film-wrapper {
@@ -425,8 +434,13 @@ body {
     padding-top: 3rem;
   }
 
-  #editing-container {
+  #short-editing-container {
     margin-bottom: 2rem;
+  }
+
+  #feature-editing-container {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
 
   #profile-photo {
