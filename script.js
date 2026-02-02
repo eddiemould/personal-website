@@ -23,74 +23,36 @@ fetch('header.html')
     setupThemeToggleButtons();  // Set up theme toggle buttons if needed
 });
 
+// OVERLAY IMAGE
+
 fetch('footer.html')
   .then(res => res.text())
   .then(data => {
     document.getElementById('footer-placeholder').innerHTML = data;
   });
 
-// DARK/LIGHT TOGGLE
+const overlay = document.getElementById('image-overlay');
+const overlayImage = document.getElementById('overlay-image');
 
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-function applyManualTheme(theme) {
-  document.documentElement.classList.remove('dark', 'light');
-  if (theme === 'dark' || theme === 'light') {
-    document.documentElement.classList.add(theme);
-  }
-}
-
-function applySystemTheme() {
-  document.documentElement.classList.remove('dark', 'light');
-  // CSS @media rule takes over again
-}
-
-function loadTheme() {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'light' || savedTheme === 'dark') {
-    applyManualTheme(savedTheme);
-  } else {
-    applySystemTheme();
-  }
-}
-
-// React to system changes only if there's no manual theme
-prefersDark.addEventListener('change', () => {
-  if (!localStorage.getItem('theme')) {
-    applySystemTheme();
-  }
+document.querySelectorAll('img').forEach(img => {
+  img.addEventListener('click', () => {
+    overlayImage.src = img.src;
+    overlay.classList.add('active');
+  });
 });
 
-function setupThemeToggleButtons() {
-  // Select the toggle buttons after the header has been loaded
-  const toggleButton = document.getElementById('theme-toggle');
-  const resetButton = document.getElementById('theme-reset');
+overlay.addEventListener('click', () => {
+  overlay.classList.remove('active');
+  overlayImage.src = '';
+});
 
-  // Check if buttons exist before adding event listeners
-  if (toggleButton && resetButton) {
-    toggleButton.addEventListener('click', () => {
-      const current = localStorage.getItem('theme');
-      let newTheme;
+// CLOSE IMG WITH ESC KEY
 
-      if (current === 'dark') {
-        newTheme = 'light';
-      } else if (current === 'light') {
-        newTheme = 'dark';
-      } else {
-        // No override yet, flip current system setting
-        newTheme = prefersDark.matches ? 'light' : 'dark';
-      }
-
-      localStorage.setItem('theme', newTheme);
-      applyManualTheme(newTheme);
-    });
-
-    resetButton.addEventListener('click', () => {
-      localStorage.removeItem('theme');
-      applySystemTheme();
-    });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    overlay.classList.remove('active');
   }
-}
+});
 
 // Initialize on page load
 loadTheme();

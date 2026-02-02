@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assisting // Eddie Mould</title>
+
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || theme === 'light') {
+          document.documentElement.classList.add(theme);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main class="main-column">
+    <h1 id="page-header">Assisting</h1>
+
+    <div class="assisting-panel">
+      <div class="assisting-poster">
+        <img src="./images/assisting/animal-friends-poster.jpg" alt="A preview poster for 'Animal Friends'.">
+        <div class="assisting-text">
+          <h4>Animal Friends (Unreleased)</h4>
+          <p>Editorial Trainee</p>
+          <p>Editor: David Walsh Heinz</p>
+          <p>Peter Atencio - Legendary Pictures, Warner Bros., Maximum Effort</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  <div id="image-overlay">
+    <img id="overlay-image" src="" alt="">
+  </div>
+</body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design // Eddie Mould</title>
+
+  <script>
+    (function() {
+      try {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark' || theme === 'light') {
+          document.documentElement.classList.add(theme);
+        }
+      } catch (e) {}
+    })();
+  </script>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="header-placeholder"></div>
+  
+  <main class="main-column">
+    <h1 id="page-header">Design</h1>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/good-bad-ugly-poster.jpg" alt="">
+        <div class="design-text">
+          <h4>The Good, the Bad and the Ugly (1966)</h4>
+          <p>A bounty-hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.</p>
+          <p>Designed in 2019.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/the-castle-of-cagliostro-poster.jpg" alt="">
+        <div class="design-text">
+          <h4>Lupin III: The Castle of Cagliostro (1979)</h4>
+          <p>Arsene, a brilliant thief, along with his colleague, rescues a princess from thugs. Soon they realise that she holds part of the key to a treasure that they have been looking for.</p>
+          <p>Designed in 2019.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/spirited-away.jpg" alt="">
+        <div class="design-text">
+          <h4>Spirited Away (2001)</h4>
+          <p>Ten-year-old Chihiro and her parents end up at an abandoned amusement park inhabited by supernatural beings. Soon, she learns that she must work to free her parents who have been turned into pigs.</p>
+          <p>Designed in 2019.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/my-neighbour-totoro.jpg" alt="">
+        <div class="design-text">
+          <h4>My Neighbour Totoro (1988)</h4>
+          <p>Two sisters relocate to rural Japan with their father to spend time with their ill mother. They face a mythical forest sprite and its woodland friends with whom they have many magical adventures.</p>
+          <p>Designed in 2019.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/princess-mononoke.jpg" alt="">
+        <div class="design-text">
+          <h4>Princess Mononoke (1997)</h4>
+          <p>While saving his village, Ashitaka, a heroic warrior, is befallen with a curse. To lift the curse, Ashitaka embarks on a perilous journey and gets involved in the conflict of two warring clans.</p>
+          <p>Designed in 2019.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/the-wind-rises.jpg" alt="">
+        <div class="design-text">
+          <h4>The Wind Rises (2013)</h4>
+          <p>Jiro Horikoshi studies assiduously to fulfil his aim of becoming an aeronautical engineer. As WWII begins, fighter aircraft designed by him end up getting used by the Japanese Empire against its foes.</p>
+          <p>Designed in 2019.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/over-the-garden-wall.jpg" alt="">
+        <div class="design-text">
+          <h4>Over the Garden Wall (2014)</h4>
+          <p>On an adventure, brothers Wirt and Greg get lost in the Unknown, a strange forest adrift in time; as they attempt to find a way out of the Unknown, they cross paths with a mysterious old woodsman and a bluebird named Beatrice.</p>
+          <p>Designed in 2020.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="design-panel">
+      <div class="design-image">
+        <img src="./images/design/the-king-of-comedy.jpg" alt="">
+        <div class="design-text">
+          <h4>The King of Comedy (1982)</h4>
+          <p>Rupert Pupkin desperately wants to become a comedian and approaches talk show host Jerry Langford for a chance to perform on his show. When all fails, he teams up with Masha to kidnap Jerry.</p>
+          <p>Designed in 2020.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+  <div id="footer-placeholder"></div>
+  <div id="image-overlay">
+    <img id="overlay-image" src="" alt="">
+  </div>
+</body>
+  <script src="script.js"></script>
+</html>
